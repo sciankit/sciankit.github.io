@@ -28,8 +28,8 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   }
 });
 
-// --- Scroll-triggered fade-in animations ---
-const fadeObserver = new IntersectionObserver((entries) => {
+// --- Scroll-triggered animations for all elements ---
+const animationObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
@@ -37,7 +37,10 @@ const fadeObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+// Observe all animation classes
+document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .pop-in, .text-reveal, .underline-reveal').forEach(el => {
+  animationObserver.observe(el);
+});
 
 // --- Contact form (shows a thank-you message) ---
 const contactForm = document.getElementById('contact-form');
