@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Jane Doe</title><!-- ✏️ Your name -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="../index.html" class="nav-logo">Jane<span>.</span></a>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero section">
+      <div class="container">
+        <span class="section-label">Get to know me</span>
+        <h1>About me</h1>
+        <p>Designer, thinker, and life-long learner based in Paris.</p><!-- ✏️ Your tagline -->
+      </div>
+    </section>
+
+    <!-- ===== ABOUT CONTENT ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- ===== PHOTO ===== -->
+          <div class="fade-in">
+            <!-- ✏️ Replace the emoji below with your photo:
+                 <img src="../images/photo.jpg" alt="Jane Doe" class="about-photo">
+                 Put your photo in the "images" folder and rename it photo.jpg -->
+            <div class="about-photo" style="display:flex; align-items:center; justify-content:center;">🧑‍🎨</div>
+          </div>
+
+          <!-- ===== TEXT ===== -->
+          <div class="about-content fade-in">
+            <span class="section-label">My story</span>
+            <h2>Designing with purpose</h2><!-- ✏️ Your headline -->
+
+            <!-- ✏️ Write your own paragraphs here -->
+            <p>
+              Hi! I'm Jane, a visual designer with a passion for creating work
+              that feels <strong>human, warm, and intentional</strong>. I started
+              my career in graphic design 5 years ago and have since worked
+              with clients across hospitality, fashion, and tech.
+            </p>
+            <p>
+              I believe the best design is quiet — it gets out of the way and
+              lets the message shine. Whether I'm crafting a brand identity or
+              laying out a magazine spread, I obsess over the small details
+              that make a big difference.
+            </p>
+            <p>
+              When I'm not designing, you'll find me on long walks with a camera,
+              reading about architecture, or attempting to grow herbs on my balcony
+              (with mixed results).
+            </p>
+
+            <!-- ===== STATS — Edit numbers and labels ===== -->
+            <div class="about-stats">
+              <div class="stat">
+                <h3>5+</h3>
+                <p>Years of experience</p>
+              </div>
+              <div class="stat">
+                <h3>40+</h3>
+                <p>Projects completed</p>
+              </div>
+              <div class="stat">
+                <h3>20+</h3>
+                <p>Happy clients</p>
+              </div>
+              <div class="stat">
+                <h3>3</h3>
+                <p>Design awards</p>
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary">Work with me →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS / TOOLS ===== -->
+    <section class="section" style="background: var(--color-surface); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <span class="section-label">Tools & skills</span>
+        <h2 style="margin-bottom: 2.5rem;">What I work with</h2><!-- ✏️ Change heading -->
+
+        <!-- ✏️ Edit or add your skills and tools here -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem;">
+
+          <div class="featured-card fade-in">
+            <div class="featured-card-body">
+              <h3>🎨 Design</h3>
+              <p>Brand identity, visual systems, print design, art direction, editorial layout.</p>
+            </div>
+          </div>
+
+          <div class="featured-card fade-in">
+            <div class="featured-card-body">
+              <h3>💻 Digital</h3>
+              <p>UI/UX design, wireframing, prototyping, responsive web layouts.</p>
+            </div>
+          </div>
+
+          <div class="featured-card fade-in">
+            <div class="featured-card-body">
+              <h3>🛠 Tools</h3>
+              <p>Figma, Illustrator, Photoshop, InDesign, After Effects, Procreate.</p>
+            </div>
+          </div>
+
+          <div class="featured-card fade-in">
+            <div class="featured-card-body">
+              <h3>📸 Photo & Motion</h3>
+              <p>Photography, photo retouching, motion graphics, social content creation.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Jane<span style="color:var(--color-accent)">.</span></div>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="footer-copy">© <span id="current-year"></span> Jane Doe. Made with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

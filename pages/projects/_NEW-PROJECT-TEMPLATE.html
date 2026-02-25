@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Title — Jane Doe</title><!-- ✏️ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="../../index.html" class="nav-logo">Jane<span>.</span></a>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="container">
+      <div style="padding-top: 3rem;">
+        <a href="../projects.html" class="project-back-link">← Back to all projects</a>
+      </div>
+
+      <!-- ===== HERO ===== -->
+      <section class="project-hero">
+        <span class="section-label">Category · Sub-category</span><!-- ✏️ -->
+        <h1>Project Title</h1><!-- ✏️ -->
+
+        <!--
+          ✏️ COVER IMAGE — two options:
+          Option A (emoji placeholder, no image yet):
+            <div class="project-hero-img" style="height: 420px;">🖼️</div>
+          Option B (real photo):
+            <img src="../../images/your-image.jpg" alt="Description" class="project-hero-img" />
+        -->
+        <div class="project-hero-img" style="height: 420px;">🖼️</div>
+      </section>
+
+      <!-- ===== CONTENT + SIDEBAR ===== -->
+      <div class="project-page-grid">
+
+        <!-- Main content -->
+        <article class="project-body">
+          <h2>Overview</h2>
+          <p>Describe the project in 2–3 sentences. Who is the client? What did they need?</p><!-- ✏️ -->
+
+          <h2>The challenge</h2>
+          <p>What was the core problem to solve?</p><!-- ✏️ -->
+
+          <!--
+            ✏️ OPTIONAL: add 2 images in the middle of your text.
+            Replace emoji with <img src="../../images/your-image.jpg" alt="..." />
+          -->
+          <div class="project-images">
+            <div class="img-placeholder">📷</div>
+            <div class="img-placeholder">📷</div>
+          </div>
+
+          <h2>What I delivered</h2>
+          <ul>
+            <li>Deliverable one</li><!-- ✏️ -->
+            <li>Deliverable two</li>
+            <li>Deliverable three</li>
+          </ul>
+
+          <h2>Outcome</h2>
+          <p>What was the result? Numbers, feedback, impact.</p><!-- ✏️ -->
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="project-sidebar">
+          <div class="project-meta-card">
+            <h4>Project details</h4>
+            <div class="meta-row">
+              <div class="meta-item"><label>Client</label><span>Client Name</span></div><!-- ✏️ -->
+              <div class="meta-item"><label>Year</label><span>2024</span></div>
+              <div class="meta-item"><label>Services</label><span>Design, Strategy</span></div>
+              <div class="meta-item"><label>Duration</label><span>X weeks</span></div>
+            </div>
+          </div>
+          <!-- ✏️ Remove or change these buttons as needed -->
+          <a href="#" class="btn btn-primary" style="width:100%; justify-content:center; margin-bottom:0.75rem;">Live site ↗</a>
+          <a href="../contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Work with me →</a>
+        </aside>
+
+      </div>
+
+      <!-- ✏️ Link to the next project (or remove this section) -->
+      <div class="next-project">
+        <p>Next project</p>
+        <a href="NEXT-PROJECT-FILE.html">Next Project Title →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Jane<span style="color:var(--color-accent)">.</span></div>
+        <ul class="footer-links">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <p class="footer-copy">© <span id="current-year"></span> Jane Doe. Made with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
